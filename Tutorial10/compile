@@ -1,0 +1,7 @@
+gcc -c Student.m -I./ -I/usr/lib64/GNUstep/Headers \
+    -o Student.o -fconstant-string-class=NSConstantString
+gcc -c testStudent.m -I./ -I/usr/lib64/GNUstep/Headers \
+    -o testStudent.o -fconstant-string-class=NSConstantString
+gcc testStudent.o Student.o -L/usr/lib64/GNUstep/Libraries \
+    -lobjc -lgnustep-base -o testStudent
+
