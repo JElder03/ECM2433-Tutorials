@@ -1,0 +1,3 @@
+g++ -I./ -std=c++11 -c OldMoney.cpp -o OldMoney.o
+g++ -I./ -std=c++11 -c testOldMoney.cpp -o testOldMoney.o
+g++ OldMoney.o testOldMoney.o -o testOldMoney

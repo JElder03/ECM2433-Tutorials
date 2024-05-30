@@ -1,0 +1,5 @@
+g++ -c Subscriber.cpp    -I./ -o Subscriber.o
+g++ -c Broker.cpp        -I./ -o Broker.o
+g++ -c OtterWatch.cpp    -I./ -o OtterWatch.o
+g++ -c observeOtters.cpp -I./ -o observeOtters.o
+g++ Subscriber.o Broker.o OtterWatch.o observeOtters.o -o observeOtters
